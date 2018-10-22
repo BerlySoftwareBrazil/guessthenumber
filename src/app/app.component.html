@@ -1,8 +1,23 @@
 <app-layout>
-    <div class="jumbotron">
-        <h1>Angular CLI v6 + Bootstrap & FontAwesome</h1>
-        <p>
-          In this tutorial you learn how to use Angular CLI v6 with Bootstrap and FontAwesome!
-        </p>
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>Coberturas</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 form-group">
+      <input type="search" id="search-coberturas" class="form-control">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 form-group">
+      <div *ngFor="let item of coberturas">
+        <button type="button" class="btn btn-outline-primary btn-lg" aria-label="Left Align">
+          <i class="fas {{item.img}} fa-2x"></i>
+          <p>{{item.name}}</p>
+        </button>
+        <div></div>
       </div>
+    </div>
+  </div>
 </app-layout>

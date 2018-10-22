@@ -2,20 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
-import { CoberturaCorretoraComponent } from './cobertura-corretora/cobertura-corretora.component';
-import { TipoCoberturaComponent } from './tipo-cobertura/tipo-cobertura.component';
-import { AppRoutingModule } from './app-routing.module';
+import { CoberturaCorretoraModule } from './cobertura-corretora/cobertura-corretora.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CoberturaCorretoraComponent,
-    TipoCoberturaComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     UiModule,
-    AppRoutingModule
+    CoberturaCorretoraModule
   ],
   providers: [],
   bootstrap: [AppComponent]
