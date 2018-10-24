@@ -1,18 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+//#region Imports
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 import { UiModule } from './ui/ui.module';
-import { CoberturaCorretoraModule } from './cobertura-corretora/cobertura-corretora.module';
 
-
+//#endregion
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent    
   ],
   imports: [
     BrowserModule,
-    UiModule,
-    CoberturaCorretoraModule
+    RouterModule,
+    UiModule
   ],
   providers: [],
   bootstrap: [AppComponent]

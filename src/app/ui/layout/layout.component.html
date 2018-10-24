@@ -1,13 +1,15 @@
 <app-header></app-header>
 <div class="container-fluid">
-<div class="row">
+  <div class="row">
     <div class="col-md-2">
-        Painel 1                    
+      <h5>Card Space 1</h5>
     </div>
     <div class="col-md-8">
-        <ng-content></ng-content>
+      <router-outlet></router-outlet>
     </div>
-    <div class="col-md-2">Painel 2</div>
-</div>
+    <div class="col-md-2">
+      <h5>Card Space 2</h5>
+    </div>
+  </div>
 </div>
 <app-footer></app-footer>
