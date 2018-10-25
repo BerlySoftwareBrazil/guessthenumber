@@ -1,12 +1,12 @@
-export class Cobertura{
-    public id: number
-    public name: string
-    public base: boolean
-    public img: string
-    public tipo: TipoCobertura
+export interface Cobertura{
+    id: number,
+    name: string,
+    base: boolean,
+    tipo: TipoCobertura,
+    img: string
 }
 
-export class TipoCobertura{
-    id: number
+export interface TipoCobertura{
+    id: number,
     name: string
 }

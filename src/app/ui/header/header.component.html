@@ -1,15 +1,15 @@
 <nav class="navbar navbar-dark bg-dark mb-5">
-    <a class="navbar-brand" href="#">TuIA</a>
+    <a class="navbar-brand" [routerLink]="['/home']">TuIA</a>
     <div class="navbar-expand mr-auto">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active">Home</a>
-        <a class="nav-item nav-link">Cobertura</a>
-        <a class="nav-item nav-link">Tipo Cobertura</a>
+        <a class="nav-item nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+        <a class="nav-item nav-link" [routerLink]="['/cobertura']" routerLinkActive="active">Cobertura</a>
+        <a class="nav-item nav-link" href="#">Tipo Cobertura</a>
       </div>
     </div>
     <div class="navbar-expand ml-auto navbar-nav">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="https://github.com/beeman" target="_blank">
+        <a class="nav-item nav-link" href="https://github.com/berlysoftware" target="_blank">
           <i class="fab fa-github-square fa-2x"></i>
         </a>
       </div>
