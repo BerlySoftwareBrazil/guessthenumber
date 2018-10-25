@@ -26,4 +26,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+<<<<<<< HEAD
 https://medium.com/codingthesmartway-com-blog/create-a-rest-api-with-json-server-36da8680136d
+=======
+## Links
+https://www.techiediaries.com/angular-http-client/
+>>>>>>> 37613294d785c5a35890c19c1487a1275b191720
