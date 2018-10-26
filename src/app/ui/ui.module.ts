@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { CoberturaCorretoraComponent } from '../cobertura-corretora/cobertura-corretora.component';
 import { HomeComponent } from '../home/home.component';
+import { CoberturaListComponent } from '../componente/coberturas/cobertura-list/cobertura-list.component';
+import { CoberturaComponent } from '../componente/coberturas/cobertura/cobertura.component';
 //#endregion
 
 @NgModule({
@@ -22,7 +24,9 @@ import { HomeComponent } from '../home/home.component';
     HeaderComponent, 
     FooterComponent, 
     CoberturaCorretoraComponent,
-    HomeComponent
+    HomeComponent,
+    CoberturaListComponent,
+    CoberturaComponent
   ],
   exports:[
     LayoutComponent
