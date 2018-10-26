@@ -1,8 +1,9 @@
+//#region Core
 import { Component, OnInit } from '@angular/core';
+//#endregion
 
 //#region Imports
 import { Cobertura, TipoCobertura } from '../db/model';
-import { CoberturasService } from '../home/home.coberturas.service';
 //#endregion
 
 @Component({
@@ -12,13 +13,10 @@ import { CoberturasService } from '../home/home.coberturas.service';
 })
 export class HomeComponent implements OnInit {
 
-  coberturas: Cobertura[];
-
-  constructor(private coberturasService: CoberturasService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.coberturasService.coberturas()
-      .subscribe(coberturas => this.coberturas = coberturas);
+
   }
 
 }
