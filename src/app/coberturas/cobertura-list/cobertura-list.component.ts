@@ -6,7 +6,7 @@ import { Cobertura, TipoCobertura } from '../../db/model';
 
 @Component({
     selector: 'app-cobertura-list',
-    templateUrl: '',
+    templateUrl: './cobertura-list/cobertura-list.component.html',
     styles: []  
 })
 export class CoberturaListComponent implements OnInit {
