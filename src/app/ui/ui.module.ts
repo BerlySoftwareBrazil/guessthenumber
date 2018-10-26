@@ -9,7 +9,6 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { CoberturaCorretoraComponent } from '../cobertura-corretora/cobertura-corretora.component';
 import { HomeComponent } from '../home/home.component';
-import { CoberturaListComponent } from '../coberturas/cobertura-list/cobertura-list.component';
 //#endregion
 
 @NgModule({
@@ -23,8 +22,7 @@ import { CoberturaListComponent } from '../coberturas/cobertura-list/cobertura-l
     HeaderComponent, 
     FooterComponent, 
     CoberturaCorretoraComponent,
-    HomeComponent,
-    CoberturaListComponent
+    HomeComponent
   ],
   exports:[
     LayoutComponent
