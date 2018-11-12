@@ -1,5 +1,5 @@
 //#region Import Core
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 //#endregion
 
 //#region Imports
@@ -13,9 +13,11 @@ import { Cobertura, TipoCobertura } from '../../../db/model';
 })
 export class CoberturaListComponent implements OnInit {
 
+  show: boolean = true;
+  
   tipoCobertura: TipoCobertura = { id: 1, name: "Vida" };
 
-  coberturas: Cobertura[] = [
+  @Output() coberturas: Cobertura[] = [
     { id: 1, name: "Médico", base: true, tipo: this.tipoCobertura, img: "fas fa-user-md fa-3x" },
     { id: 2, name: "Funeral", base: true, tipo: this.tipoCobertura, img: "fab fa-pagelines fa-3x" },
     { id: 3, name: "Invalidez", base: true, tipo: this.tipoCobertura, img: "fas fa-wheelchair fa-3x" },

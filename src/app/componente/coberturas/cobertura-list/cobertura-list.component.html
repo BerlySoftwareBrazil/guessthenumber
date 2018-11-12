@@ -1,5 +1,6 @@
 <div class="row">
-  <div class="col-md-12" style="border:1px dashed green">
-    <app-cobertura class="col-md-2" style="border: 1px dashed black" *ngFor="let item of coberturas" [cobertura]="item"></app-cobertura>
+  <div class="col-md-12" style="border:1px dashed green" >
+    <app-cobertura class="col-md-2" style="border: 1px dashed black" *ngFor="let item of coberturas" [cobertura]="item" *ng-if="!show; then 'MaisCoberturas'"></app-cobertura>
+    <button #MaisCoberturas>Mais Coberturas</button>
   </div>
 </div>

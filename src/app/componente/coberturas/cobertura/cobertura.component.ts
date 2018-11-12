@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Cobertura } from 'src/app/db/model';
 
 @Component({
   selector: 'app-cobertura',
@@ -7,9 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CoberturaComponent implements OnInit {
 
-  @Input() cobertura: any;
+  @Input() cobertura: Cobertura;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
   }
